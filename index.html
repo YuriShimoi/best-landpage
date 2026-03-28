@@ -1,16 +1,1253 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/testfront/favicon.ico">
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 'Font Awesome 7 Free';
+  --fa-font-regular: normal 400 1em/1 'Font Awesome 7 Free';
+  --fa-font-light: normal 300 1em/1 'Font Awesome 7 Pro';
+  --fa-font-thin: normal 100 1em/1 'Font Awesome 7 Pro';
+  --fa-font-duotone: normal 900 1em/1 'Font Awesome 7 Duotone';
+  --fa-font-duotone-regular: normal 400 1em/1 'Font Awesome 7 Duotone';
+  --fa-font-duotone-light: normal 300 1em/1 'Font Awesome 7 Duotone';
+  --fa-font-duotone-thin: normal 100 1em/1 'Font Awesome 7 Duotone';
+  --fa-font-brands: normal 400 1em/1 'Font Awesome 7 Brands';
+  --fa-font-sharp-solid: normal 900 1em/1 'Font Awesome 7 Sharp';
+  --fa-font-sharp-regular: normal 400 1em/1 'Font Awesome 7 Sharp';
+  --fa-font-sharp-light: normal 300 1em/1 'Font Awesome 7 Sharp';
+  --fa-font-sharp-thin: normal 100 1em/1 'Font Awesome 7 Sharp';
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 'Font Awesome 7 Sharp Duotone';
+  --fa-font-sharp-duotone-regular: normal 400 1em/1 'Font Awesome 7 Sharp Duotone';
+  --fa-font-sharp-duotone-light: normal 300 1em/1 'Font Awesome 7 Sharp Duotone';
+  --fa-font-sharp-duotone-thin: normal 100 1em/1 'Font Awesome 7 Sharp Duotone';
+  --fa-font-slab-regular: normal 400 1em/1 'Font Awesome 7 Slab';
+  --fa-font-slab-press-regular: normal 400 1em/1 'Font Awesome 7 Slab Press';
+  --fa-font-whiteboard-semibold: normal 600 1em/1 'Font Awesome 7 Whiteboard';
+  --fa-font-thumbprint-light: normal 300 1em/1 'Font Awesome 7 Thumbprint';
+  --fa-font-notdog-solid: normal 900 1em/1 'Font Awesome 7 Notdog';
+  --fa-font-notdog-duo-solid: normal 900 1em/1 'Font Awesome 7 Notdog Duo';
+  --fa-font-etch-solid: normal 900 1em/1 'Font Awesome 7 Etch';
+  --fa-font-graphite-thin: normal 100 1em/1 'Font Awesome 7 Graphite';
+  --fa-font-jelly-regular: normal 400 1em/1 'Font Awesome 7 Jelly';
+  --fa-font-jelly-fill-regular: normal 400 1em/1 'Font Awesome 7 Jelly Fill';
+  --fa-font-jelly-duo-regular: normal 400 1em/1 'Font Awesome 7 Jelly Duo';
+  --fa-font-chisel-regular: normal 400 1em/1 'Font Awesome 7 Chisel';
+  --fa-font-utility-semibold: normal 600 1em/1 'Font Awesome 7 Utility';
+  --fa-font-utility-duo-semibold: normal 600 1em/1 'Font Awesome 7 Utility Duo';
+  --fa-font-utility-fill-semibold: normal 600 1em/1 'Font Awesome 7 Utility Fill';
+}
+
+.svg-inline--fa {
+  box-sizing: content-box;
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  width: var(--fa-width, 1.25em);
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285714em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left,
+.svg-inline--fa .fa-pull-start {
+  float: inline-start;
+  margin-inline-end: var(--fa-pull-margin, 0.3em);
+}
+.svg-inline--fa.fa-pull-right,
+.svg-inline--fa .fa-pull-end {
+  float: inline-end;
+  margin-inline-start: var(--fa-pull-margin, 0.3em);
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));
+  inset-block-start: 0.25em; /* syncing vertical alignment with Web Font rendering */
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: var(--fa-width, 1.25em);
+}
+.fa-layers .svg-inline--fa {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: calc(10 / 16 * 1em); /* converts a 10px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 10 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 10 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-xs {
+  font-size: calc(12 / 16 * 1em); /* converts a 12px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 12 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 12 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-sm {
+  font-size: calc(14 / 16 * 1em); /* converts a 14px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 14 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 14 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-lg {
+  font-size: calc(20 / 16 * 1em); /* converts a 20px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 20 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 20 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-xl {
+  font-size: calc(24 / 16 * 1em); /* converts a 24px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 24 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 24 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-2xl {
+  font-size: calc(32 / 16 * 1em); /* converts a 32px size into an em-based value that's relative to the scale's 16px base */
+  line-height: calc(1 / 32 * 1em); /* sets the line-height of the icon back to that of it's parent */
+  vertical-align: calc((6 / 32 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */
+}
+
+.fa-width-auto {
+  --fa-width: auto;
+}
+
+.fa-fw,
+.fa-width-fixed {
+  --fa-width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-inline-start: var(--fa-li-margin, 2.5em);
+  padding-inline-start: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+/* Heads Up: Bordered Icons will not be supported in the future!
+  - This feature will be deprecated in the next major release of Font Awesome (v8)!
+  - You may continue to use it in this version *v7), but it will not be supported in Font Awesome v8.
+*/
+/* Notes:
+* --@{v.$css-prefix}-border-width = 1/16 by default (to render as ~1px based on a 16px default font-size)
+* --@{v.$css-prefix}-border-padding =
+  ** 3/16 for vertical padding (to give ~2px of vertical whitespace around an icon considering it's vertical alignment)
+  ** 4/16 for horizontal padding (to give ~4px of horizontal whitespace around an icon)
+*/
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.0625em);
+  box-sizing: var(--fa-border-box-sizing, content-box);
+  padding: var(--fa-border-padding, 0.1875em 0.25em);
+}
+
+.fa-pull-left,
+.fa-pull-start {
+  float: inline-start;
+  margin-inline-end: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right,
+.fa-pull-end {
+  float: inline-end;
+  margin-inline-start: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  animation-name: fa-beat;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  animation-name: fa-beat-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  animation-name: fa-flip;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  animation-name: fa-shake;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  animation-name: fa-spin;
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+  .fa-bounce,
+  .fa-fade,
+  .fa-beat-fade,
+  .fa-flip,
+  .fa-pulse,
+  .fa-shake,
+  .fa-spin,
+  .fa-spin-pulse {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.svg-inline--fa.fa-inverse {
+  fill: var(--fa-inverse, #fff);
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  --fa-width: 1.25em;
+  height: 1em;
+  width: var(--fa-width);
+}
+.svg-inline--fa.fa-stack-2x {
+  --fa-width: 2.5em;
+  height: 2em;
+  width: var(--fa-width);
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  z-index: var(--fa-stack-z-index, auto);
+}</style><link rel="icon" href="http://localhost:8080/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <title>BEST</title>
-    <script type="module" crossorigin src="/testfront/assets/index-DWVye28b.js"></script>
-    <link rel="stylesheet" crossorigin href="/testfront/assets/index-CBjgwObg.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
-</html>
+  <style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/assets/main.css">/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --white: #f9f9f9;
+  --white-soft: #eeeeee;
+  --white-mid: #b8bdc1;
+  --black: #282828;
+  --black-soft: #555555;
+
+  --gray0: #111111;
+  --gray1: #1b191a;
+  --gray2: #1E1C1D;
+  --gray3: #171516;
+
+  --highlight: #ffbd59;
+  --highlight-darker: #e0a84e;
+
+  --text-light: var(--indigo);
+  --text-dark: var(--white);
+
+  --base-font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --bold-font: "Segoe UI" black;
+
+  --border: #ffffff14;
+
+  /* #1b191a */
+  /* lit sparking font | elvetica */
+}
+/* semantic color variables for this project */
+:root {
+  --background: var(--white-soft);
+  --background-secondary: var(--white-mid);
+  --background-tertiary: var(--white);
+  --color: var(--text-light);
+  --color-secondary: var(--black-soft);
+  --color-inverted: var(--text-dark);
+  --border-color: var(--border);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--gray1);
+    --background-secondary: var(--gray3);
+    --background-tertiary: var(--gray2);
+    --color: var(--text-dark);
+    --color-secondary: var(--white-mid);
+    --color-inverted: var(--black);
+    --border-color: var(--border);
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+body {
+  min-height: 100vh;
+  color: var(--color);
+  background: var(--background);
+  line-height: 1.6;
+  font-family: var(--base-font);
+    
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* font loading */
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/src/assets/font/Montserrat-Bold.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+body {
+  background-color: var(--background-secondary);
+}
+.centered-container {
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 100%;
+  max-width: 1240px;
+}
+marker {
+  font-weight: bold;
+  font-style: italic;
+}
+hr {
+  border: 1px outset var(--white);
+  border-bottom-color: var(--white-soft);
+  margin-bottom: 5px;
+}
+select,
+input {
+  background: var(--background);
+  color: var(--white-soft);
+  border: none;
+  padding: 3px 10px;
+  border-radius: 3px;
+  width: 100%;
+  outline: none;
+}
+select {
+  text-align: center;
+}
+input {
+  padding: 5px;
+}
+input:disabled {
+  background: var(--background-secondary);
+  color: var(--background-secondary);
+}
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--background);
+  margin-left: 5px;
+}
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+@media (max-width: 1024px) { /* mobile */
+  #app {
+    width: 100%;
+  }
+}
+.btn {
+  font-weight: 600;
+  padding: 16px 22px;
+  border: none;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+.btn-highlight {
+  background: var(--highlight);
+}</style><style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/App.vue?vue&amp;type=style&amp;index=0&amp;scoped=7a7a37b1&amp;lang.css">
+main[data-v-7a7a37b1] {
+  background-color: var(--background-secondary);
+}
+</style><style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/components/Header.vue?vue&amp;type=style&amp;index=0&amp;scoped=c970699f&amp;lang.css">
+nav[data-v-c970699f] {
+  background-color: #1b191aa6;
+  height: 78px;
+  font-size: 1.1rem;
+  backdrop-filter: blur(16px);
+  font-family: Segoe UI;
+  border-bottom: 1px solid #ffffff14;
+}
+nav > div[data-v-c970699f] {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#header[data-v-c970699f] {
+  position: sticky;
+  top: 0;
+  z-index: 998;
+}
+#header-logo[data-v-c970699f] {
+  display: flex;
+  pointer-events: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+#logo-icon[data-v-c970699f] {
+  height: 40px;
+  aspect-ratio: 1;
+  margin-right: 10px;
+}
+#logo-text[data-v-c970699f] {
+  display: grid;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: var(--highlight);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+#logo-text span[data-v-c970699f]:first-child {
+  color: var(--color);
+  font-weight: bolder;
+  font-size: 16px;
+  font-family: var(--bold-font);
+}
+.header-groups[data-v-c970699f] {
+  display: contents;
+  list-style: none;
+}
+.header-groups > li[data-v-c970699f] {
+  cursor: pointer;
+}
+.header-groups > li > svg[data-v-c970699f] {
+  color: var(--highlight);
+}
+.header-link[data-v-c970699f] {
+  text-decoration: none;
+  color: var(--highlight);
+  border: 1px solid var(--highlight);
+  border-radius: 8px;
+  padding: 0 16px 1px 14px;
+  line-height: 40px;
+  font-size: 1rem;
+  font-weight: 0;
+
+  transition: all ease 180ms;
+}
+.header-link[data-v-c970699f]:hover {
+  color: var(--color-inverted);
+  background: var(--highlight);
+}
+</style><style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/components/Footer.vue?vue&amp;type=style&amp;index=0&amp;scoped=4896eafd&amp;lang.css">
+footer[data-v-4896eafd] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--background-secondary);
+  font-size: 1rem;
+  padding: 34px 0 42px 0;
+  border-top: 1px solid var(--border-color);
+  color: var(--color-secondary);
+}
+#footer-info[data-v-4896eafd] {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+#footer-logo[data-v-4896eafd] {
+  display: flex;
+  pointer-events: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+#logo-icon[data-v-4896eafd] {
+  height: 40px;
+  aspect-ratio: 1;
+  margin-right: 10px;
+}
+#logo-text[data-v-4896eafd] {
+  display: grid;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+#logo-text span[data-v-4896eafd]:first-child {
+  color: var(--color);
+  font-weight: bolder;
+  font-size: 16px;
+  font-family: var(--bold-font);
+}
+#footer-info p[data-v-4896eafd] {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: var(--color-secondary);
+}
+</style><style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/views/Landpage/Main.vue?vue&amp;type=style&amp;index=0&amp;scoped=7ac51d15&amp;lang.css">
+#template[data-v-7ac51d15] {
+  background-color: #ffbd5914;
+  background-image: radial-gradient(ellipse at top right, var(--background-secondary), transparent 1200px)
+}
+section[data-v-7ac51d15] {
+  display: flex;
+  justify-content: center;
+}
+header[data-v-7ac51d15] {
+  color: #ffffff20;
+  font-weight: 600;
+  text-align: center;
+  --head-background: transparent;
+  background-image: linear-gradient(to top, transparent 10px, #ffffff06 10px, #ffffff06 12px, transparent 12px);
+}
+header span[data-v-7ac51d15] {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: -8px;
+}
+header span label[data-v-7ac51d15] {
+  display: inline-block;
+  backdrop-filter: blur(10px);
+  padding: 0 6px;
+  text-transform: capitalize;
+}
+.content[data-v-7ac51d15] {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.content h2[data-v-7ac51d15] {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+.content h3[data-v-7ac51d15] {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.content p[data-v-7ac51d15] {
+  color: var(--color-secondary);
+  margin-bottom: 36px;
+  font-size: 1rem;
+}
+.badge[data-v-7ac51d15] {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ffbd591f;
+  border: 1px solid #ffbd592e;
+  color: var(--highlight);
+  font-weight: 800;
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  padding: 8px 14px;
+  min-width: 42px;
+  margin-bottom: 20px;
+}
+#presentation-content[data-v-7ac51d15] {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, black 80%, transparent 95%);
+}
+#presentation-content > div[data-v-7ac51d15] {
+  padding-top: 50px;
+  align-items: center;
+}
+#presentation-content > div h1[data-v-7ac51d15] {
+  margin: 0 0 18px;
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  font-family: Segoe UI;
+}
+#presentation-content > div h1 marker[data-v-7ac51d15] {
+  font-style: normal;
+  color: var(--highlight);
+}
+#presentation-content > div p[data-v-7ac51d15] {
+  font-size: clamp(1rem, 1.4vw, 1.16rem);
+  line-height: 1.75;
+  margin-bottom: 0px;
+}
+#presentation-content > div button[data-v-7ac51d15] {
+  margin: 20px 16px 12px 0;
+}
+#lateral-presentation[data-v-7ac51d15] {
+  padding: 36px 28px 24px 28px;
+  border-radius: 20px;
+  color: var(--color-secondary);
+  backdrop-filter: blur(15px);
+}
+#lateral-presentation h3[data-v-7ac51d15] {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+}
+#lateral-presentation ul[data-v-7ac51d15] {
+  padding: 20px 0;
+  list-style: none;
+  gap: 14px;
+  display: grid;
+}
+#lateral-presentation ul li[data-v-7ac51d15] {
+  display: flex;
+  align-items: baseline;
+  background: #ffffff08;
+  border: 1px solid #ffffff14;
+  height: 67px;
+  padding-top: 5px;
+  padding-left: 16px;
+  border-radius: 16px;
+  color: var(--highlight);
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--bold-font);
+}
+#lateral-presentation ul li span[data-v-7ac51d15] {
+  height: 1rem;
+  font-size: 1.5rem;
+  padding-left: 3px;
+  padding-right: 1px;
+  line-height: 12px;
+  color: white;
+  font-weight: bold;
+  font-family: Segoe UI;
+  border-right: 2px solid var(--highlight);
+  animation: blink-border-7ac51d15 infinite step-end 900ms;
+}
+#lateral-presentation h4[data-v-7ac51d15] {
+  font-size: 0.9rem;
+  color: var(--color);
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+#presentation-content > div #lateral-presentation p[data-v-7ac51d15] {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+#profiles-content[data-v-7ac51d15] {
+  background: linear-gradient(to top, var(--background-secondary) 5px, transparent);
+}
+#profiles-content .group-container[data-v-7ac51d15] {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 18px;
+}
+#profiles-content .group-container div[data-v-7ac51d15] {
+  flex: 1 1 0px;
+  padding: 20px;
+  border-radius: 20px;
+}
+#profiles-content .group-container ul[data-v-7ac51d15] {
+  color: var(--color-secondary);
+  padding-left: 22px;
+  font-size: 1rem;
+}
+#profiles-content .group-container ul li[data-v-7ac51d15] {
+  position: relative;
+  margin-bottom: 10px;
+  list-style: none;
+}
+#profiles-content .group-container ul li[data-v-7ac51d15]::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0.58em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--highlight);
+  box-shadow: 0 0 10px #ffbd5959;
+}
+#profiles-content .group-container button[data-v-7ac51d15] {
+  background: transparent;
+  color: var(--color);
+  border: 1px solid #ffffff14;
+  margin-top: 20px;
+}
+#definition-content[data-v-7ac51d15] {
+  background: var(--background-secondary);
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+#definition-content .glass-container[data-v-7ac51d15] {
+  border-radius: 20px;
+  padding: 20px;
+}
+#definition-content h3[data-v-7ac51d15] {
+  font-family: var(--bold-font);
+}
+#timeline-container[data-v-7ac51d15] {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 45px 1fr;
+  gap: 18px;
+  grid-template-areas:
+    "SUB 0 1"
+    "SUB 0 1"
+    "SUB 0 1"
+    "SUB 0 1";
+  background-image:
+    linear-gradient(to top, var(--background-secondary), transparent 60px),
+    linear-gradient(to right, transparent 50%, #ffbd592e, transparent calc(50% + 1px));
+}
+#timeline-container span[data-v-7ac51d15] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ffbd591f;
+  border: 1px solid #ffbd592e;
+  color: var(--highlight);
+  font-weight: 800;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  backdrop-filter: blur(10px);
+}
+#timeline-container > div[data-v-7ac51d15]:first-child {
+  grid-area: SUB;
+  padding: 32px 30px;
+}
+#timeline-container p[data-v-7ac51d15] {
+  margin-bottom: 10px;
+}
+#timeline-container q[data-v-7ac51d15] {
+  display: inline-block;
+  background: #ffffff06;
+  border-left: 3px solid var(--highlight);
+  font-weight: 600;
+  margin-top: 14px;
+  padding: 18px 20px 18px 18px;
+  border-radius: 0 16px 16px 0;
+  font-size: 1rem;
+}
+#timeline-container q[data-v-7ac51d15]::after,
+#timeline-container q[data-v-7ac51d15]::before {
+  content: "";
+}
+#metodology-content[data-v-7ac51d15] {
+  background: var(--background-secondary);
+}
+#metodology-content .group-container[data-v-7ac51d15] {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+#metodology-content .group-container div[data-v-7ac51d15] {
+  flex-grow: 1;
+  padding: 20px;
+  border-radius: 20px;
+}
+#faq-content[data-v-7ac51d15] {
+  background: var(--background-secondary);
+}
+#faq-content .faq-topic[data-v-7ac51d15] {
+  border-radius: 20px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+#faq-content .faq-topic p[data-v-7ac51d15] {
+  margin-bottom: 6px;
+}
+#contact-content[data-v-7ac51d15] {
+  background: var(--background-secondary);
+}
+#contact-content > div[data-v-7ac51d15] {
+  grid-template-columns: 1fr 580px;
+  align-items: end;
+  gap: 18px;
+}
+#contact-content .contact-topics[data-v-7ac51d15] { 
+  gap: 18px;
+}
+#contact-content .contact-topics div[data-v-7ac51d15] {
+  padding: 20px;
+  border-radius: 16px;
+}
+#contact-content .contact-topics p[data-v-7ac51d15] {
+  margin-bottom: 10px;
+}
+#form-container[data-v-7ac51d15] {
+  border-radius: 20px;
+  padding: 30px;
+}
+#form-container form[data-v-7ac51d15] {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#form-container form label[data-v-7ac51d15] {
+  font-weight: 600;
+  font-size: 0.94rem;
+  color: var(--color);
+}
+#form-container form input[data-v-7ac51d15],
+#form-container form textarea[data-v-7ac51d15] {
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  padding: 14px 16px;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+#form-container form textarea[data-v-7ac51d15] {
+  margin-top: -4px;
+  min-height: 150px;
+  font-family: var(--font);
+}
+#form-container p[data-v-7ac51d15] {
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+#form-container form .duo-container[data-v-7ac51d15] {
+  gap: 12px;
+}
+#form-container form .btn-group[data-v-7ac51d15] {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+#form-container form .btn-group button[data-v-7ac51d15] {
+  background: #ffffff06;
+  color: var(--color-secondary);
+  border: 1px solid transparent;
+}
+#form-container form .btn-group button[data-v-7ac51d15]:active,
+#form-container form .btn-group button[active][data-v-7ac51d15] {
+  background: #ffbd5914;
+  border-color: #ffbd591f;
+  color: vaR(--highlight);
+}
+.duo-container[data-v-7ac51d15] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.glass-container[data-v-7ac51d15] {
+  color: var(--color);
+  background: #ffffff08;
+  border: 1px solid #ffffff14;
+}
+@keyframes blink-border-7ac51d15 {
+50% {
+    border-color: transparent;
+}
+}
+</style></head>
+  <body cz-shortcut-listen="true">
+    <div id="app" data-v-app=""><main data-v-7a7a37b1=""><div data-v-7ac51d15="" data-v-7a7a37b1="" id="template"><nav data-v-c970699f="" data-v-7ac51d15="" id="header"><div data-v-c970699f="" class="centered-container"><span data-v-c970699f="" id="header-logo"><img data-v-c970699f="" id="logo-icon" src="./index_files/logo_mini_white.svg" alt="BEST logo"><label data-v-c970699f="" id="logo-text" for="header-logo"><span data-v-c970699f="">BEST</span><span data-v-c970699f="">Business, Education, Solutions and Training</span></label></span><ul data-v-c970699f="" class="header-groups"><li data-v-c970699f="">Business <svg data-v-c970699f="" class="svg-inline--fa fa-chevron-down" data-prefix="fas" data-icon="chevron-down" role="img" viewBox="0 0 448 512" aria-hidden="true"><path class="" fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></li><li data-v-c970699f="">Education <svg data-v-c970699f="" class="svg-inline--fa fa-chevron-down" data-prefix="fas" data-icon="chevron-down" role="img" viewBox="0 0 448 512" aria-hidden="true"><path class="" fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></li><li data-v-c970699f="">Solutions <svg data-v-c970699f="" class="svg-inline--fa fa-chevron-down" data-prefix="fas" data-icon="chevron-down" role="img" viewBox="0 0 448 512" aria-hidden="true"><path class="" fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></li><li data-v-c970699f="">Training <svg data-v-c970699f="" class="svg-inline--fa fa-chevron-down" data-prefix="fas" data-icon="chevron-down" role="img" viewBox="0 0 448 512" aria-hidden="true"><path class="" fill="currentColor" d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></li></ul><a data-v-c970699f="" class="header-link" href="http://localhost:8080/#"><svg data-v-c970699f="" class="svg-inline--fa fa-user" data-prefix="far" data-icon="user" role="img" viewBox="0 0 448 512" aria-hidden="true"><path class="" fill="currentColor" d="M144 128a80 80 0 1 1 160 0 80 80 0 1 1 -160 0zm208 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0zM48 480c0-70.7 57.3-128 128-128l96 0c70.7 0 128 57.3 128 128l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8c0-97.2-78.8-176-176-176l-96 0C78.8 304 0 382.8 0 480l0 8c0 13.3 10.7 24 24 24s24-10.7 24-24l0-8z"></path></svg> Log in </a></div></nav><section data-v-7ac51d15="" id="presentation-content"><div data-v-7ac51d15="" class="content duo-container"><div data-v-7ac51d15=""><h1 data-v-7ac51d15="">Seu <marker data-v-7ac51d15="">objetivo</marker>, seu caminho.<br data-v-7ac51d15="">Você escolhe.<br data-v-7ac51d15="">A gente te guia.</h1><p data-v-7ac51d15=""> Com a Metodologia Modular, escolhemos a abordagem mais adequada para o seu caso e transformamos o aprendizado em uma experiência que faz mais sentido para você, com foco prático, clareza de progressão e aplicação real. </p><button data-v-7ac51d15="" class="btn btn-highlight">Saiba mais</button><button data-v-7ac51d15="" class="btn glass-container">Como funciona</button></div><div data-v-7ac51d15="" id="lateral-presentation" class="glass-container"><h3 data-v-7ac51d15=""> Seja qual for seu objetivo </h3><ul data-v-7ac51d15=""><li data-v-7ac51d15="">B<span data-v-7ac51d15="" id="outdoorB"></span></li><li data-v-7ac51d15="">E<span data-v-7ac51d15="" id="outdoorE"></span></li><li data-v-7ac51d15="">S<span data-v-7ac51d15="" id="outdoorS"></span></li><li data-v-7ac51d15="">T<span data-v-7ac51d15="" id="outdoorT"></span></li></ul><h4 data-v-7ac51d15=""> Aqui você encontra o melhor caminho. </h4><p data-v-7ac51d15=""> Diferentes objetivos. Diferentes pontos de partida. Um caminho inteligente para avançar. </p></div></div></section><header data-v-7ac51d15=""><span data-v-7ac51d15=""><label data-v-7ac51d15="">para quem</label></span></header><section id="profiles-content" data-v-7ac51d15=""><div class="content" data-v-7ac51d15=""><h2 data-v-7ac51d15="">Uma proposta flexível para diferentes<br data-v-7ac51d15="">perfis.</h2><p data-v-7ac51d15="">A mesma lógica modular pode ser aplicada a objetivos pessoais, crescimento profissional e<br data-v-7ac51d15="">treinamentos corporativos.</p><div class="group-container" data-v-7ac51d15=""><div class="glass-container" data-v-7ac51d15=""><span class="badge" data-v-7ac51d15="">Profissionais</span><br data-v-7ac51d15=""><h3 data-v-7ac51d15="">Para quem precisa usar inglês no trabalho</h3><p data-v-7ac51d15="">Ideal para profissionais que querem se comunicar melhor em reuniões, apresentações, entrevistas e interações do dia a dia corporativo.</p><ul data-v-7ac51d15=""><li data-v-7ac51d15="">Business English</li><li data-v-7ac51d15="">Meetings, calls e apresentações</li><li data-v-7ac51d15="">Comunicação estratégica</li></ul><button class="btn" data-v-7ac51d15="">Quero esse caminho</button></div><div class="glass-container" data-v-7ac51d15=""><span class="badge" data-v-7ac51d15="">Empresas</span><br data-v-7ac51d15=""><h3 data-v-7ac51d15="">Para organizações que querem desenvolver equipes</h3><p data-v-7ac51d15="">Treinamentos corporativos com foco em função, contexto de trabalho e objetivos reais de comunicação.</p><ul data-v-7ac51d15=""><li data-v-7ac51d15="">Programas para times</li><li data-v-7ac51d15="">Nivelamento e diagnóstico</li><li data-v-7ac51d15="">Trilhas sob medida</li></ul><button class="btn" data-v-7ac51d15="">Falar sobre B2B</button></div><div class="glass-container" data-v-7ac51d15=""><span class="badge" data-v-7ac51d15="">Alunos</span><br data-v-7ac51d15=""><h3 data-v-7ac51d15="">Para quem quer aprender com mais lógica e motivação</h3><p data-v-7ac51d15="">Uma opção para quem quer voltar a estudar ou sair do método tradicional e aprender com mais clareza.</p><ul data-v-7ac51d15=""><li data-v-7ac51d15="">Inglês geral e objetivos pessoais</li><li data-v-7ac51d15="">Fluência com progressão</li><li data-v-7ac51d15="">Experiência mais engajadora</li></ul><button class="btn" data-v-7ac51d15="">Descobrir meu perfil</button></div></div></div></section><header style="background-color:var(--background-secondary);" data-v-7ac51d15=""><span data-v-7ac51d15=""><label data-v-7ac51d15="">como funciona</label></span></header><section id="definition-content" data-v-7ac51d15=""><div id="timeline-container" class="content" data-v-7ac51d15=""><div class="glass-container" data-v-7ac51d15=""><h2 data-v-7ac51d15="">Uma metodologia que se adapta ao aluno, não o contrário.</h2><p data-v-7ac51d15=""> Em vez de seguir uma rota genérica, a BEST combina diferentes abordagens de forma estratégica, de acordo com o perfil, a rotina, o nível e o objetivo de cada aluno. </p><q data-v-7ac51d15="">A ideia central é simples: encontrar a melhor forma de ensinar inglês para cada caso, sem depender de um único modelo fixo.</q></div><label data-v-7ac51d15=""><span data-v-7ac51d15="">1</span></label><div class="glass-container" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Entendemos seu momento</h3><p data-v-7ac51d15="">Analisamos nível, necessidades, rotina, histórico com o idioma e as situações em que o inglês realmente importa para você.</p></div><label data-v-7ac51d15=""><span data-v-7ac51d15="">2</span></label><div class="glass-container" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Definimos a melhor rota</h3><p data-v-7ac51d15="">Selecionamos os temas, tarefas, formatos de prática e ênfases linguísticas que fazem mais sentido para o seu objetivo.</p></div><label data-v-7ac51d15=""><span data-v-7ac51d15="">3</span></label><div class="glass-container" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Você pratica com contexto</h3><p data-v-7ac51d15="">As aulas deixam de ser apenas explicação e passam a ser experiências de uso real, com foco em comunicação útil.</p></div><label data-v-7ac51d15=""><span data-v-7ac51d15="">4</span></label><div class="glass-container" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Acompanhamos sua evolução</h3><p data-v-7ac51d15="">O progresso é acompanhado com clareza para que você veja o que está desenvolvendo, onde avançou e qual é o próximo passo.</p></div></div></section><header style="background-color:var(--background-secondary);" data-v-7ac51d15=""><span data-v-7ac51d15=""><label data-v-7ac51d15="">metodologia</label></span></header><section id="metodology-content" data-v-7ac51d15=""><div class="content" data-v-7ac51d15=""><h2 data-v-7ac51d15="">Estrutura, personalização e uso real do<br data-v-7ac51d15="">idioma.</h2><p data-v-7ac51d15="">A BEST combina organização, flexibilidade e prática para gerar aprendizado com mais sentido, mais<br data-v-7ac51d15="">engajamento e mais aplicação no dia a dia.</p><div class="group-container" data-v-7ac51d15=""><div class="glass-container" data-v-7ac51d15=""><span class="badge" data-v-7ac51d15="">M</span><br data-v-7ac51d15=""><h3 data-v-7ac51d15="">Metodologia Modular</h3><p data-v-7ac51d15="">Em vez de um caminho único para todos, o conteúdo se organiza em módulos e prioridades que se ajustam ao aluno.</p></div><div class="glass-container" data-v-7ac51d15=""><span class="badge" data-v-7ac51d15="">T</span><br data-v-7ac51d15=""><h3 data-v-7ac51d15="">Aprendizagem por tarefas</h3><p data-v-7ac51d15="">O foco está em usar o inglês para resolver situações, cumprir objetivos e desenvolver comunicação prática.</p></div><div class="glass-container" data-v-7ac51d15=""><span class="badge" data-v-7ac51d15="">P</span><br data-v-7ac51d15=""><h3 data-v-7ac51d15="">Projetos e aplicação</h3><p data-v-7ac51d15="">Ao longo do processo, o aluno consolida o que aprendeu em entregas, projetos e interações com propósito.</p></div></div></div></section><header style="background-color:var(--background-secondary);" data-v-7ac51d15=""><span data-v-7ac51d15=""><label data-v-7ac51d15="">FAQ</label></span></header><section id="faq-content" data-v-7ac51d15=""><div class="content" data-v-7ac51d15=""><h2 data-v-7ac51d15="">Perguntas frequentes</h2><p data-v-7ac51d15="">Uma seção pronta para reduzir objeções logo antes do contato.</p><div class="glass-container faq-topic" data-v-7ac51d15=""><h3 data-v-7ac51d15="">As aulas são apenas para Business English?</h3><p data-v-7ac51d15="">Não. A proposta atende tanto quem precisa de inglês para o trabalho quanto quem quer estudar por objetivos pessoais, acadêmicos ou de desenvolvimento geral.</p></div><div class="glass-container faq-topic" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Como a personalização funciona na prática?</h3><p data-v-7ac51d15="">O ponto de partida é entender seu nível, sua rotina, seu objetivo e as situações em que você realmente precisa usar o idioma. A partir disso, organizamos a rota mais adequada.</p></div><div class="glass-container faq-topic" data-v-7ac51d15=""><h3 data-v-7ac51d15="">A BEST atende empresas?</h3><p data-v-7ac51d15="">Sim. A proposta pode ser aplicada em treinamentos corporativos, programas para equipes e percursos de aprendizagem orientados por função e necessidade real.</p></div></div></section><header style="background-color:var(--background-secondary);" data-v-7ac51d15=""><span data-v-7ac51d15=""><label data-v-7ac51d15="">contato</label></span></header><section data-v-7ac51d15="" id="contact-content"><div data-v-7ac51d15="" class="content duo-container"><div data-v-7ac51d15=""><h2 data-v-7ac51d15="">O que torna a BEST diferente.</h2><p data-v-7ac51d15="">A proposta não é apenas ensinar inglês, mas criar um caminho que mantenha o aluno avançando com mais clareza, contexto e engajamento.</p><div class="contact-topics duo-container" data-v-7ac51d15=""><div class="glass-container" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Personalização real</h3><p data-v-7ac51d15="">O plano não parte apenas do nível. Ele parte do aluno, do objetivo e do cenário de uso.</p></div><div class="glass-container" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Foco em aplicação</h3><p data-v-7ac51d15="">O idioma aparece em tarefas, decisões, interações e situações de uso real.</p></div><div class="glass-container" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Estrutura com flexibilidade</h3><p data-v-7ac51d15="">Há um caminho claro, mas sem engessar a experiência ou limitar o que pode ser priorizado.</p></div><div class="glass-container" data-v-7ac51d15=""><h3 data-v-7ac51d15="">Visão moderna de aprendizagem</h3><p data-v-7ac51d15="">A proposta combina metodologia, engajamento e construção de autonomia.</p></div></div></div><div data-v-7ac51d15="" id="form-container" class="glass-container"><form data-v-7ac51d15="" onsubmit="return false"><div data-v-7ac51d15="" class="duo-container"><div data-v-7ac51d15=""><label data-v-7ac51d15="">Nome</label><input data-v-7ac51d15="" name="name" type="text" placeholder="Seu nome"></div><div data-v-7ac51d15=""><label data-v-7ac51d15="">Email</label><input data-v-7ac51d15="" name="email" type="email" placeholder="nome@mail.com"></div></div><input data-v-7ac51d15="" type="text" name="profile" hidden=""><div data-v-7ac51d15="" class="btn-group"><button data-v-7ac51d15="" class="btn">Profissional</button><button data-v-7ac51d15="" class="btn">Empresa</button><button data-v-7ac51d15="" class="btn" active="">Aluno</button></div><label data-v-7ac51d15="">Mensagem</label><textarea data-v-7ac51d15="" name="message" placeholder="Conte um pouco sobre seu momento, seu objetivo e o que você gostaria de desenvolver."></textarea><button data-v-7ac51d15="" class="btn btn-highlight">Entrar em contato</button></form><p data-v-7ac51d15="">Você pode conectar este formulário ao seu email, WhatsApp, Formspree ou outro sistema depois.</p></div></div></section><footer data-v-4896eafd="" data-v-7ac51d15=""><div data-v-4896eafd="" id="footer-info"><div data-v-4896eafd=""><span data-v-4896eafd="" id="footer-logo"><img data-v-4896eafd="" id="logo-icon" src="./index_files/logo_mini_white.svg" alt="BEST logo"><label data-v-4896eafd="" id="logo-text" for="footer-logo"><span data-v-4896eafd="">BEST</span><span data-v-4896eafd="">Business, Education, Solutions and Training</span></label></span><p data-v-4896eafd="">Inglês com direção, propósito e uma experiência de aprendizagem mais conectada aos objetivos de cada aluno.</p></div> ©2026. All rights reserved. </div></footer></div></main></div>
+    <!-- <script type="module" src="./index_files/main.ts"></script> -->
+    <script defer>
+      [...document.getElementById("form-container").getElementsByClassName("btn-group")[0].getElementsByTagName("button")].map(btn => btn.onclick = (e) => {
+        [...e.target.parentNode.getElementsByTagName("button")].map(cbtn => cbtn.removeAttribute("active"));
+        e.target.setAttribute("active", "true");
+      });
+
+      function programOutdoor() {
+      const typingSpeed = 85;
+      const deletingSpeed = 45;
+      const typingDelay = 400;
+      const letterStep = 300;
+      const wordDelay = 5000;
+
+      function setTyping(el, word) {
+        for(let l=0; l < word.length; l++) {
+          setTimeout(() => {
+            el.innerHTML += word[l];
+          }, typingSpeed * l);
+          setTimeout(() => {
+            el.innerHTML = el.innerHTML.slice(0, el.innerHTML.length - 1);
+          }, wordDelay - typingDelay - deletingSpeed * l);
+        }
+      }
+
+      const word_list = [
+        ['usiness', 'elonging', 'reakthroughs', 'orders', 'randing'],
+        ['xams', 'mails', 'xchange', 'xpression', 'ducation'],
+        ['alary', 'uccess', 'peaking', 'ecurity', 'trategy'],
+        ['ravel', 'eamwork', 'raining', 'echnology', 'alks']
+      ];
+
+      const outdoor_list = [document.getElementById("outdoorB"), document.getElementById("outdoorE"), document.getElementById("outdoorS"), document.getElementById("outdoorT")];
+      for(const out in outdoor_list) {
+        const outdoor = (outdoor_list[out]);
+        let i = 1;
+        setTimeout(() => {
+          setTyping(outdoor, word_list[out][0]);
+          setInterval(() => {
+            setTyping(outdoor, word_list[out][i]);
+            i = (i+1) % word_list[out].length;
+          }, wordDelay);
+
+        }, Number(out) * letterStep);
+      }
+    }
+
+    programOutdoor();
+    </script>
+
+</body></html>

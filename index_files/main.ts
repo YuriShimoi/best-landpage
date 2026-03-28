@@ -1,0 +1,12 @@
+import "/src/assets/main.css";
+import { createApp } from "/node_modules/.vite/deps/vue.js?v=5fa2791f";
+import App from "/src/App.vue";
+import router from "/src/router/index.ts";
+import { library } from "/node_modules/.vite/deps/@fortawesome_fontawesome-svg-core.js?v=5fa2791f";
+import { FontAwesomeIcon } from "/node_modules/.vite/deps/@fortawesome_vue-fontawesome.js?v=5fa2791f";
+import { far } from "/node_modules/.vite/deps/@fortawesome_free-regular-svg-icons.js?v=5fa2791f";
+import { fas } from "/node_modules/.vite/deps/@fortawesome_free-solid-svg-icons.js?v=5fa2791f";
+library.add(far, fas);
+createApp(App).use(router).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4udHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuL2Fzc2V0cy9tYWluLmNzcyc7XHJcblxyXG5pbXBvcnQgeyBjcmVhdGVBcHAgfSBmcm9tICd2dWUnO1xyXG5pbXBvcnQgQXBwIGZyb20gJy4vQXBwLnZ1ZSc7XHJcbmltcG9ydCByb3V0ZXIgZnJvbSAnLi9yb3V0ZXInO1xyXG5cclxuaW1wb3J0IHsgbGlicmFyeSB9IGZyb20gJ0Bmb3J0YXdlc29tZS9mb250YXdlc29tZS1zdmctY29yZSc7XHJcbmltcG9ydCB7IEZvbnRBd2Vzb21lSWNvbiB9IGZyb20gJ0Bmb3J0YXdlc29tZS92dWUtZm9udGF3ZXNvbWUnO1xyXG5pbXBvcnQgeyBmYXIgfSBmcm9tICdAZm9ydGF3ZXNvbWUvZnJlZS1yZWd1bGFyLXN2Zy1pY29ucyc7XHJcbmltcG9ydCB7IGZhcyB9IGZyb20gJ0Bmb3J0YXdlc29tZS9mcmVlLXNvbGlkLXN2Zy1pY29ucyc7XHJcblxyXG5saWJyYXJ5LmFkZChmYXIsIGZhcyk7XHJcblxyXG5jcmVhdGVBcHAoQXBwKVxyXG4udXNlKHJvdXRlcilcclxuLmNvbXBvbmVudCgnZm9udC1hd2Vzb21lLWljb24nLCBGb250QXdlc29tZUljb24pXHJcbi5tb3VudCgnI2FwcCcpO1xyXG4iXSwibWFwcGluZ3MiOiJBQUFBLE9BQU87QUFFUCxTQUFTLGlCQUFpQjtBQUMxQixPQUFPLFNBQVM7QUFDaEIsT0FBTyxZQUFZO0FBRW5CLFNBQVMsZUFBZTtBQUN4QixTQUFTLHVCQUF1QjtBQUNoQyxTQUFTLFdBQVc7QUFDcEIsU0FBUyxXQUFXO0FBRXBCLFFBQVEsSUFBSSxLQUFLLEdBQUc7QUFFcEIsVUFBVSxHQUFHLEVBQ1osSUFBSSxNQUFNLEVBQ1YsVUFBVSxxQkFBcUIsZUFBZSxFQUM5QyxNQUFNLE1BQU07IiwibmFtZXMiOltdfQ==
