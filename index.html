@@ -1207,11 +1207,15 @@ header span label[data-v-7ac51d15] {
         e.target.setAttribute("active", "true");
       });
 
+      function rand(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+      } /* Added to test, don't know if there is a native function*/
+        
       function programOutdoor() {
-      const typingSpeed = 85;
-      const deletingSpeed = 45;
-      const typingDelay = 400;
-      const letterStep = 300;
+      const typingSpeed = rand(78, 92); /* Original: 85 */
+      const deletingSpeed = rand(40, 48); /* Original: 45 */
+      const typingDelay = rand(390, 420); /* Original: 400 */
+      const letterStep = rand(280, 310); /* Original: 300 */
       const wordDelay = 5000;
 
       function setTyping(el, word) {
@@ -1229,7 +1233,7 @@ header span label[data-v-7ac51d15] {
         ['usiness', 'randing', 'oost', 'ilíngue'],
         ['ducação', 'stratégia', 'xpansão', 'volução', 'xperiência'],
         ['ucesso', 'peaking', 'uperação', 'tatus', 'kills', 'egurança'],
-        ['ravel', 'time', 'ransformação', 'alento', 'reinamento']
+        ['ravel', 'ime', 'ransformação', 'alento', 'reinamento']
       ];
 
       const outdoor_list = [document.getElementById("outdoorB"), document.getElementById("outdoorE"), document.getElementById("outdoorS"), document.getElementById("outdoorT")];
