@@ -553,10 +553,10 @@
   margin: auto;
   position: absolute;
   z-index: var(--fa-stack-z-index, auto);
-}</style><link rel="icon" href="http://localhost:8080/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+}
+</style><link rel="icon" href="http://localhost:8080/favicon.ico">
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEST</title>
   <style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/assets/main.css">/* color palette from <https://github.com/vuejs/theme> */
 :root {
@@ -780,7 +780,9 @@ nav > div[data-v-c970699f] {
   color: var(--color-inverted);
   background: var(--highlight);
 }
-</style><style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/components/Footer.vue?vue&amp;type=style&amp;index=0&amp;scoped=4896eafd&amp;lang.css">
+</style>
+
+<style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/components/Footer.vue?vue&amp;type=style&amp;index=0&amp;scoped=4896eafd&amp;lang.css">
 footer[data-v-4896eafd] {
   display: flex;
   align-items: center;
@@ -833,7 +835,9 @@ footer[data-v-4896eafd] {
   margin-top: 10px;
   color: var(--color-secondary);
 }
-</style><style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/views/Landpage/Main.vue?vue&amp;type=style&amp;index=0&amp;scoped=7ac51d15&amp;lang.css">
+</style>
+
+<style type="text/css" data-vite-dev-id="D:/_projetos/best/git/SiteBest/src/views/Landpage/Main.vue?vue&amp;type=style&amp;index=0&amp;scoped=7ac51d15&amp;lang.css">
 #template[data-v-7ac51d15] {
   background-color: #ffbd5914;
   background-image: radial-gradient(ellipse at top right, var(--background-secondary), transparent 1200px)
@@ -1198,7 +1202,7 @@ header span label[data-v-7ac51d15] {
 }
 }</style>
 
-    <style>
+<style>
   .whatsapp-float {
     position: fixed;
     right: 22px;
@@ -1274,6 +1278,197 @@ header span label[data-v-7ac51d15] {
     .whatsapp-float svg {
       width: 48px;
       height: 48px;
+    }
+  }
+</style>
+
+<style>
+  @media (max-width: 1024px) {
+    .centered-container,
+    .content {
+      padding-inline: 18px;
+    }
+
+    .duo-container {
+      grid-template-columns: 1fr !important;
+      gap: 24px !important;
+    }
+
+    #contact-content > div {
+      grid-template-columns: 1fr !important;
+    }
+
+    #profiles-content .group-container,
+    #metodology-content .group-container {
+      flex-direction: column;
+    }
+
+    #profiles-content .group-container > div,
+    #metodology-content .group-container > div {
+      width: 100%;
+    }
+
+    #timeline-container {
+      grid-template-columns: 1fr !important;
+      grid-template-areas: none !important;
+      background-image: none !important;
+      gap: 16px !important;
+    }
+
+    #timeline-container > div:first-child {
+      grid-area: auto !important;
+      padding: 24px !important;
+    }
+
+    #timeline-container > label {
+      display: none !important;
+    }
+
+    #contact-content .contact-topics,
+    #form-container form .duo-container {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  @media (max-width: 900px) {
+    nav {
+      height: auto !important;
+    }
+
+    nav > div {
+      height: auto !important;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 12px 16px !important;
+      align-items: center !important;
+    }
+
+    #header-logo {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    #logo-text span:last-child {
+      display: none;
+    }
+
+    .header-groups {
+      display: flex !important;
+      width: 100%;
+      order: 3;
+      gap: 14px;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 4px;
+      list-style: none;
+    }
+
+    .header-groups > li {
+      flex: 0 0 auto;
+      font-size: 0.95rem;
+    }
+
+    .header-link {
+      margin-left: auto;
+      line-height: 1.2 !important;
+      padding: 10px 12px !important;
+      font-size: 0.92rem !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #presentation-content > div {
+      padding-top: 28px !important;
+    }
+
+    #presentation-content > div h1 {
+      font-size: clamp(2.2rem, 11vw, 3.8rem) !important;
+    }
+
+    #presentation-content > div p {
+      font-size: 0.98rem !important;
+      line-height: 1.65 !important;
+    }
+
+    #presentation-content > div button {
+      width: 100%;
+      margin: 14px 0 0 !important;
+    }
+
+    #lateral-presentation {
+      padding: 20px !important;
+    }
+
+    #lateral-presentation ul {
+      gap: 10px !important;
+    }
+
+    #lateral-presentation ul li {
+      min-height: 58px;
+      height: auto !important;
+      padding: 10px 14px !important;
+      font-size: 1.45rem !important;
+      align-items: center !important;
+      overflow: hidden;
+    }
+
+    #lateral-presentation ul li span {
+      height: auto !important;
+      line-height: 1.1 !important;
+      font-size: 1.05rem !important;
+      display: inline-block;
+      white-space: normal;
+      word-break: break-word;
+    }
+
+    .content {
+      padding-bottom: 72px !important;
+    }
+
+    .content h2 {
+      font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    #form-container {
+      padding: 22px !important;
+    }
+
+    #form-container form .btn-group {
+      grid-template-columns: 1fr !important;
+    }
+
+    #footer-info {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 12px;
+      padding-inline: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .centered-container,
+    .content {
+      padding-inline: 14px;
+    }
+
+    #presentation-content > div h1 {
+      font-size: clamp(2rem, 12vw, 3.2rem) !important;
+    }
+
+    #lateral-presentation h3 {
+      font-size: 0.72rem !important;
+    }
+
+    #lateral-presentation ul li {
+      font-size: 1.25rem !important;
+    }
+
+    #lateral-presentation ul li span {
+      font-size: 0.95rem !important;
     }
   }
 </style>
