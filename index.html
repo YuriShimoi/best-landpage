@@ -1196,8 +1196,52 @@ header span label[data-v-7ac51d15] {
 50% {
     border-color: transparent;
 }
-}
-</style></head>
+}</style>
+
+    <style>
+  .whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: #ffffff;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+    z-index: 9999;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .whatsapp-float svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+  }
+
+  @media (max-width: 760px) {
+    .whatsapp-float {
+      right: 16px;
+      bottom: 16px;
+      width: 56px;
+      height: 56px;
+    }
+
+    .whatsapp-float svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+</style>
+</head>
   <body cz-shortcut-listen="true">
     <div id="app" data-v-app=""><main data-v-7a7a37b1=""><div data-v-7ac51d15="" data-v-7a7a37b1="" id="template"><nav data-v-c970699f="" data-v-7ac51d15="" id="header">
         <div data-v-c970699f="" class="centered-container"><span data-v-c970699f="" id="header-logo"><img data-v-c970699f="" id="logo-icon" src="./index_files/logo_mini_white.svg" alt="BEST logo">
@@ -1317,7 +1361,29 @@ header span label[data-v-7ac51d15] {
                             <label data-v-7ac51d15="">Mensagem</label><textarea data-v-7ac51d15="" name="message" placeholder="Conte um pouco sobre seu momento, seu objetivo e o que você gostaria de desenvolver."></textarea>
                             <button data-v-7ac51d15="" class="btn btn-highlight">Entrar em contato</button></form><p data-v-7ac51d15="">Você pode conectar este formulário ao seu email, WhatsApp, 
                             Formspree ou outro sistema depois.</p></div></div></section><footer data-v-4896eafd="" data-v-7ac51d15="">
-                                <div data-v-4896eafd="" id="footer-info"><div data-v-4896eafd=""><span data-v-4896eafd="" id="footer-logo"><img data-v-4896eafd="" id="logo-icon" src="./index_files/logo_mini_white.svg" alt="BEST logo"><label data-v-4896eafd="" id="logo-text" for="footer-logo"><span data-v-4896eafd="">BEST</span><span data-v-4896eafd="">Business, Education, Solutions and Training</span></label></span><p data-v-4896eafd="">Inglês com direção, propósito e uma experiência de aprendizagem mais conectada aos objetivos de cada aluno.</p></div> ©2026. All rights reserved. </div></footer></div></main></div>
+                                <div data-v-4896eafd="" id="footer-info"><div data-v-4896eafd=""><span data-v-4896eafd="" id="footer-logo"><img data-v-4896eafd="" id="logo-icon" src="./index_files/logo_mini_white.svg" alt="BEST logo"><label data-v-4896eafd="" id="logo-text" for="footer-logo">
+                                    <span data-v-4896eafd="">BEST</span>
+                                    <span data-v-4896eafd="">Business, Education, Solutions and Training</span></label></span>
+                                    <p data-v-4896eafd="">Inglês com direção, propósito e uma experiência de aprendizagem mais conectada aos objetivos de cada aluno.</p></div> 
+                                    ©2026. All rights reserved. </div></footer></div></main></div>
+
+      </div></main></div>
+
+<a
+  class="whatsapp-float"
+  href="https://wa.me/5511999324853?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20a%20BEST."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar no WhatsApp"
+>
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M19.11 17.35c-.27-.14-1.58-.78-1.82-.87-.24-.09-.42-.14-.6.14-.18.27-.69.87-.85 1.05-.15.18-.31.2-.58.07-.27-.14-1.12-.41-2.14-1.3-.79-.71-1.33-1.59-1.49-1.86-.15-.27-.02-.42.12-.56.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.14-.6-1.46-.82-2-.22-.53-.44-.46-.6-.47h-.51c-.18 0-.47.07-.71.34s-.94.92-.94 2.24.96 2.6 1.09 2.78c.14.18 1.89 2.88 4.57 4.04.64.28 1.14.45 1.53.58.64.2 1.22.17 1.68.1.51-.08 1.58-.64 1.81-1.26.22-.63.22-1.17.15-1.28-.07-.11-.24-.18-.51-.31Z"></path>
+    <path d="M16.02 3.2c-6.96 0-12.6 5.63-12.6 12.58 0 2.22.58 4.39 1.69 6.29L3.2 28.8l6.92-1.82a12.64 12.64 0 0 0 5.9 1.5h.01c6.95 0 12.59-5.63 12.59-12.58 0-3.37-1.31-6.53-3.7-8.91A12.5 12.5 0 0 0 16.02 3.2Zm0 23.14h-.01a10.52 10.52 0 0 1-5.36-1.47l-.38-.22-4.11 1.08 1.1-4.01-.25-.41a10.44 10.44 0 0 1-1.6-5.51c0-5.79 4.72-10.5 10.52-10.5 2.8 0 5.43 1.08 7.41 3.07a10.4 10.4 0 0 1 3.08 7.43c0 5.79-4.72 10.5-10.5 10.5Z"></path>
+  </svg>
+</a>
+
+<!-- <script type="module" src="./index_files/main.ts"></script> -->
+<script defer>
     <!-- <script type="module" src="./index_files/main.ts"></script> -->
     <script defer>
       [...document.getElementById("form-container").getElementsByClassName("btn-group")[0].getElementsByTagName("button")].map(btn => btn.onclick = (e) => {
